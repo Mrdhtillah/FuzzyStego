@@ -105,13 +105,18 @@ function embedAndCalculatePSNR(coverImagePath, secretDataPath, stegoImagePath)
 end
 
 function saveStegoImage(stegoImage, outputFilePath)
-    % Ensure the output file path has a .tiff extension
+    % Ensure the output folder exists
+    [outputDir, ~, ~] = fileparts(outputFilePath);
+    if ~exist(outputDir, 'dir')
+        mkdir(outputDir);
+    end
+
+    % Save the stego image in TIFF format
     [~, ~, ext] = fileparts(outputFilePath);
     if ~strcmp(ext, '.tiff') && ~strcmp(ext, '.tif')
         outputFilePath = strcat(outputFilePath, '.tiff');
     end
-    
-    % Save the stego image in TIFF format
+
     imwrite(stegoImage, outputFilePath, 'tiff');
     fprintf('Stego image saved as %s\n', outputFilePath);
 end
