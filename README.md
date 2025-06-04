@@ -1,8 +1,8 @@
-# FuzzyStego: An Adaptive Steganographic Scheme Using Fuzzy Logic for Optimizing Embeddable Areas in Spatial Domain Images
+# MACNTStego: A Software Package for Adaptive Fuzzy Logic-Driven Image Steganography in the Spatial Domain
 
 ## Introduction
 
-**FuzzyStego** integrates fuzzy logic to embed secret payloads into digital images with enhanced imperceptibility. The evaluating process includes multiple embedding strategies such as fuzzy-based, non-fuzzy, and extractable variants.
+**MACNTStego** integrates fuzzy logic to embed secret payloads into digital images with enhanced imperceptibility. The evaluating process includes multiple embedding strategies such as fuzzy-based, non-fuzzy, and extractable variants.
 
 ## Features
 
@@ -13,7 +13,7 @@
   
 ## Installation
 
-To run **FuzzyStego**, ensure you follow the following steps:
+To run **MACNTStego**, ensure you follow the following steps:
 
 - **Open MATLAB Environment**
 - **Clone the Repository:**
